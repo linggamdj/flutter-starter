@@ -9,6 +9,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
         theme: ThemeData(
           primarySwatch: Colors.blue,
@@ -17,7 +18,10 @@ class MyApp extends StatelessWidget {
         home: Scaffold(
             appBar: AppBar(
               title: Text("E-Walley"),
-              backgroundColor: Colors.lightGreen,
+              backgroundColor: Colors.lightBlue,
+              actions: <Widget>[
+                IconButton(icon: Icon(Icons.mail), onPressed: () {})
+              ],
             ),
             body: SafeArea(
               child: Text("E-Wallet"),
