@@ -24,7 +24,10 @@ class MyApp extends StatelessWidget {
               ],
             ),
             body: SafeArea(
-              child: Text("E-Wallet"),
+              child: Image(
+                image: AssetImage("assets/images/ic_mail.png"),
+                height: 250,
+              ),
             )));
   }
 }
