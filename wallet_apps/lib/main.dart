@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'font_style.dart';
+import 'custom_color.dart';
 
 void main() {
   runApp(MyApp());
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text("E-Walley"),
-          backgroundColor: Colors.red,
+          backgroundColor: maroon,
           actions: <Widget>[
             IconButton(icon: Icon(Icons.mail), onPressed: () {})
           ],
