@@ -35,11 +35,14 @@ class MyApp extends StatelessWidget {
                           image: AssetImage("assets/images/ic_mail.png"),
                           height: 250,
                         ),
-                        Text(
-                          "Your Balance Has Been Added!",
-                          style: header,
-                          textAlign: TextAlign.center,
-                        ),
+                        Padding(
+                          padding: EdgeInsets.only(top: 5.0),
+                          child: Text(
+                            "Your Balance Has Been Added!",
+                            style: header,
+                            textAlign: TextAlign.center,
+                          ),
+                        )
                       ],
                     )))));
   }
