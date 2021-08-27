@@ -26,7 +26,8 @@ class MyApp extends StatelessWidget {
             ),
             body: SafeArea(
                 child: Container(
-                    margin: EdgeInsets.only(left: 55.0),
+                    // color: Colors.red,
+                    margin: EdgeInsets.only(left: 25.0, right: 25.0),
                     padding: EdgeInsets.only(top: 50.0),
                     child: Column(
                       children: [
@@ -34,7 +35,11 @@ class MyApp extends StatelessWidget {
                           image: AssetImage("assets/images/ic_mail.png"),
                           height: 250,
                         ),
-                        Text("Your Balance Has Been Added!", style: header),
+                        Text(
+                          "Your Balance Has Been Added!",
+                          style: header,
+                          textAlign: TextAlign.center,
+                        ),
                       ],
                     )))));
   }
