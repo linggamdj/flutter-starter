@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'font_style.dart';
 
 void main() {
   runApp(MyApp());
@@ -33,7 +34,7 @@ class MyApp extends StatelessWidget {
                           image: AssetImage("assets/images/ic_mail.png"),
                           height: 250,
                         ),
-                        Text("Your Balance Has Been Added!"),
+                        Text("Your Balance Has Been Added!", style: header),
                       ],
                     )))));
   }
