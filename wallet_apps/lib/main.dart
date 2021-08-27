@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         home: Scaffold(
             appBar: AppBar(
               title: Text("E-Walley"),
-              backgroundColor: Colors.lightBlue,
+              backgroundColor: Colors.red,
               actions: <Widget>[
                 IconButton(icon: Icon(Icons.mail), onPressed: () {})
               ],
