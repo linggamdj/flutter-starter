@@ -6,7 +6,6 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Image.asset('assets/image.jpg'),
             SizedBox(
@@ -17,6 +16,7 @@ class HomePage extends StatelessWidget {
                 horizontal: 30,
               ),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -34,7 +34,84 @@ class HomePage extends StatelessWidget {
                             fontWeight: FontWeight.w300, fontSize: 12),
                       ),
                     ],
-                  )
+                  ),
+                  Row(
+                    children: [
+                      Icon(
+                        Icons.favorite,
+                        color: Colors.orange,
+                        size: 24.0,
+                      ),
+                      Text(
+                        '4.2',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      )
+                    ],
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 30,
+            ),
+            Padding(
+              padding: EdgeInsets.symmetric(
+                horizontal: 30,
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Column(
+                    children: [
+                      Icon(
+                        Icons.call,
+                        color: Colors.blue,
+                        size: 24.0,
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Text('CALL',
+                          style: TextStyle(
+                            color: Colors.blue,
+                            fontSize: 12,
+                          ))
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      Icon(
+                        Icons.near_me,
+                        color: Colors.blue,
+                        size: 24.0,
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Text('ROUTE',
+                          style: TextStyle(
+                            color: Colors.blue,
+                            fontSize: 12,
+                          ))
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      Icon(
+                        Icons.share,
+                        color: Colors.blue,
+                        size: 24.0,
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Text('SHARE',
+                          style: TextStyle(
+                            color: Colors.blue,
+                            fontSize: 12,
+                          ))
+                    ],
+                  ),
                 ],
               ),
             ),
