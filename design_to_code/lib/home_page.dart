@@ -5,7 +5,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
+        child: ListView(
           children: [
             Image.asset('assets/image.jpg'),
             SizedBox(
@@ -115,6 +115,22 @@ class HomePage extends StatelessWidget {
                 ],
               ),
             ),
+            SizedBox(
+              height: 30,
+            ),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 30),
+              child: Text(
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum congue nibh, id gravida urna vestibulum vel. Proin aliquet suscipit faucibus. Fusce et ligula non metus pellentesque vulputate eget ut metus. Cras varius non lectus fringilla laoreet. Vestibulum accumsan mauris eget velit hendrerit laoreet. Nulla porttitor erat et sodales tempus. Maecenas ut blandit nunc.\n\nSed dignissim fringilla erat, at convallis erat pellentesque ac. Nulla maximus pellentesque dictum. Duis viverra massa quis commodo pulvinar. Etiam lectus erat, pharetra et velit id, pellentesque venenatis risus. Nullam tempor faucibus dictum. Etiam id scelerisque ex. Vestibulum diam quam, vehicula non mi sit amet, varius sagittis purus',
+                style: TextStyle(
+                  fontSize: 12,
+                ),
+                textAlign: TextAlign.justify,
+              ),
+            ),
+            SizedBox(
+              height: 30,
+            )
           ],
         ),
       ),
