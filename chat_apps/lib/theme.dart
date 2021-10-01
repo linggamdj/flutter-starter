@@ -10,6 +10,7 @@ Color greenColor = Color(0xff29CB9E);
 Color lightGreyColor = Color(0xffF8FAFC);
 Color darkGeryColor = Color(0xff505C6B);
 Color lightGrayColor = Color(0xffEBEFF3);
+Color darkGrayColor = Color(0xff999999);
 
 TextStyle titleTextStyle = TextStyle(
   color: blackColor,
