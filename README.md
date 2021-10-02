@@ -1,2 +1,2 @@
 # flutter-starter
-basic stuff of flutter that i learnt
+Basics of flutter stuff that i have learned
