@@ -7,12 +7,6 @@ class MessagePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: lightGreyColor,
-      // floatingActionButton: FloatingActionButton(
-      //   onPressed: () {},
-      //   backgroundColor: greenColor,
-      //   child: Icon(Icons.phone, size: 35),
-      // ),
-      // floatingActionButtonLocation: FloatingActionButtonLocation.startTop,
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
@@ -46,74 +40,88 @@ class MessagePage extends StatelessWidget {
                   ],
                 ),
               ),
-              MessageTile(),
-              MessageTile(),
+              Container(
+                child: Column(
+                  children: [
+                    MessageTile(),
+                    MessageTile(),
+                    Padding(
+                      padding: EdgeInsets.only(
+                        left: 30,
+                        top: 30,
+                        right: 30,
+                      ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: [
+                          Container(
+                            padding: EdgeInsets.symmetric(
+                                vertical: 11, horizontal: 30),
+                            decoration: BoxDecoration(
+                              color: whiteColor,
+                              borderRadius: BorderRadius.only(
+                                topLeft: Radius.circular(25),
+                                topRight: Radius.circular(25),
+                                bottomLeft: Radius.circular(25),
+                              ),
+                            ),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.end,
+                              children: [
+                                Text(
+                                  "Thinking about how\nto deal with this...",
+                                  style: TextStyle(
+                                      color: darkGeryColor, fontSize: 16),
+                                ),
+                                Text(
+                                  "2:30",
+                                  style: subtitleTextStyle,
+                                ),
+                              ],
+                            ),
+                          ),
+                          SizedBox(
+                            width: 12,
+                          ),
+                          Image.asset(
+                            'assets/images/chat_3.png',
+                            width: 40,
+                            height: 40,
+                          ),
+                        ],
+                      ),
+                    ),
+                    MessageTile(),
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 250,
+              ),
               Padding(
                 padding: EdgeInsets.only(
                   left: 30,
                   top: 30,
                   right: 30,
                 ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: [
-                    Container(
-                      padding:
-                          EdgeInsets.symmetric(vertical: 11, horizontal: 30),
-                      decoration: BoxDecoration(
-                        color: whiteColor,
-                        borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(25),
-                          topRight: Radius.circular(25),
-                          bottomLeft: Radius.circular(25),
-                        ),
-                      ),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.end,
-                        children: [
-                          Text(
-                            "Thinking about how\nto deal with this...",
-                            style:
-                                TextStyle(color: darkGeryColor, fontSize: 16),
-                          ),
-                          Text(
-                            "2:30",
-                            style: subtitleTextStyle,
-                          ),
-                        ],
-                      ),
-                    ),
-                    SizedBox(
-                      width: 12,
-                    ),
-                    Image.asset(
-                      'assets/images/chat_3.png',
-                      width: 40,
-                      height: 40,
-                    ),
-                  ],
-                ),
-              ),
-              MessageTile(),
-              Padding(
-                padding: EdgeInsets.all(30),
                 child: Container(
-                    width: double.infinity,
-                    padding: EdgeInsets.all(15),
-                    decoration: BoxDecoration(
-                      color: whiteColor,
-                      borderRadius: BorderRadius.circular(50),
-                    ),
-                    child: Row(
-                      children: [
-                        Text(
-                          "Type message ...",
-                          style: TextStyle(color: darkGrayColor),
-                        ),
-                        Spacer(),
-                        Icon(Icons.send_rounded),
-                      ],
-                    )),
+                  width: double.infinity,
+                  padding: EdgeInsets.all(15),
+                  decoration: BoxDecoration(
+                    color: whiteColor,
+                    borderRadius: BorderRadius.circular(50),
+                  ),
+                  child: Row(
+                    children: [
+                      Text(
+                        "Type message ...",
+                        style: TextStyle(color: darkGrayColor),
+                      ),
+                      Spacer(),
+                      Icon(Icons.send_rounded),
+                    ],
+                  ),
+                ),
               ),
             ],
           ),
